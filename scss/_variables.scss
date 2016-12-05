@@ -1,0 +1,34 @@
+// Colors
+$background-color: #fff ; 
+$Theme-color: #95e1d3;
+$Content-color: #4b5d75;
+$additional-color: #f38181; 
+$link-color: #d34f31;
+$white: #fff;
+
+// Fonts
+$Caviar_dreamsbold: 'CaviarDreamsBold', sans-serif;
+$Caviar_dreamsregular: "CaviarDreamsRegular", sans-serif;
+$base-fs: 18px;
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin background-clip($background) {
+  -webkit-background-clip: $background;
+     -moz-background-clip: $background;
+      -ms-background-clip: $background;
+          background-clip: $background;
+}
+@mixin clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+

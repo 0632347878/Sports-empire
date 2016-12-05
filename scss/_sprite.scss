@@ -1,0 +1,226 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon_attention {
+  background-image: url(../img/sprite.png);
+  background-position: -265px -98px;
+  width: 14px;
+  height: 14px;
+}
+.icon-arrow_left {
+  background-image: url(../img/sprite.png);
+  background-position: -21px -245px;
+  width: 21px;
+  height: 33px;
+}
+.icon-arrow_right {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -245px;
+  width: 21px;
+  height: 33px;
+}
+.icon-black_ok {
+  background-image: url(../img/sprite.png);
+  background-position: -177px -189px;
+  width: 24px;
+  height: 21px;
+}
+.icon-black_org {
+  background-image: url(../img/sprite.png);
+  background-position: -268px -63px;
+  width: 13px;
+  height: 15px;
+}
+.icon-blue_arrow_r {
+  background-image: url(../img/sprite.png);
+  background-position: -62px -245px;
+  width: 20px;
+  height: 32px;
+}
+.icon-blue_arrowl {
+  background-image: url(../img/sprite.png);
+  background-position: -42px -245px;
+  width: 20px;
+  height: 32px;
+}
+.icon-blue_facebook {
+  background-image: url(../img/sprite.png);
+  background-position: -219px -152px;
+  width: 29px;
+  height: 29px;
+}
+.icon_blue_instagram {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -216px;
+  width: 29px;
+  height: 28px;
+}
+.icon_blue_vk {
+  background-image: url(../img/sprite.png);
+  background-position: -152px -63px;
+  width: 29px;
+  height: 29px;
+}
+.icon-chanel {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -152px;
+  width: 96px;
+  height: 64px;
+}
+.icon-dakine {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -98px;
+  width: 132px;
+  height: 54px;
+}
+.icon_facebook {
+  background-image: url(../img/sprite.png);
+  background-position: -239px -63px;
+  width: 29px;
+  height: 29px;
+}
+.icon-fender {
+  background-image: url(../img/sprite.png);
+  background-position: -132px -98px;
+  width: 133px;
+  height: 49px;
+}
+.icon-green_ok {
+  background-image: url(../img/sprite.png);
+  background-position: -96px -189px;
+  width: 30px;
+  height: 26px;
+}
+.icon_instagram {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -216px;
+  width: 29px;
+  height: 28px;
+}
+.icon-item_3 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 152px;
+  height: 98px;
+}
+.icon_location {
+  background-image: url(../img/sprite.png);
+  background-position: -82px -245px;
+  width: 19px;
+  height: 29px;
+}
+.icon-ok {
+  background-image: url(../img/sprite.png);
+  background-position: -178px -152px;
+  width: 41px;
+  height: 37px;
+}
+.icon_organizer {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -216px;
+  width: 26px;
+  height: 28px;
+}
+.icon_pen {
+  background-image: url(../img/sprite.png);
+  background-position: -222px -189px;
+  width: 19px;
+  height: 19px;
+}
+.icon_phone {
+  background-image: url(../img/sprite.png);
+  background-position: -113px -216px;
+  width: 23px;
+  height: 23px;
+}
+.icon-red_VK {
+  background-image: url(../img/sprite.png);
+  background-position: -181px -63px;
+  width: 29px;
+  height: 29px;
+}
+.icon-red_facebook {
+  background-image: url(../img/sprite.png);
+  background-position: -248px -152px;
+  width: 29px;
+  height: 29px;
+}
+.icon-red_instagram {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -216px;
+  width: 29px;
+  height: 29px;
+}
+.icon_red_org {
+  background-image: url(../img/sprite.png);
+  background-position: -137px -152px;
+  width: 41px;
+  height: 37px;
+}
+.icon-sign {
+  background-image: url(../img/sprite.png);
+  background-position: -136px -216px;
+  width: 22px;
+  height: 22px;
+}
+.icon-slizenger {
+  background-image: url(../img/sprite.png);
+  background-position: -152px 0px;
+  width: 129px;
+  height: 63px;
+}
+.icon-star {
+  background-image: url(../img/sprite.png);
+  background-position: -96px -152px;
+  width: 41px;
+  height: 37px;
+}
+.icon_vk {
+  background-image: url(../img/sprite.png);
+  background-position: -210px -63px;
+  width: 29px;
+  height: 29px;
+}
+.icon-white_ok {
+  background-image: url(../img/sprite.png);
+  background-position: -153px -189px;
+  width: 24px;
+  height: 21px;
+}
+.icon-white_pen {
+  background-image: url(../img/sprite.png);
+  background-position: -126px -189px;
+  width: 27px;
+  height: 21px;
+}
+.icon_window {
+  background-image: url(../img/sprite.png);
+  background-position: -201px -189px;
+  width: 21px;
+  height: 19px;
+}
+.icon_white_window {
+  width: 21px;
+  height: 19px;
+  background-image: url(../img/white_window.png);
+}
+.black_pen{
+  width: 20px;
+  height: 19px;
+  background-image: url(../img/black_pen.png);
+}
