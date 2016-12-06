@@ -1,5 +1,4 @@
 
-
 @media screen and (max-width: 1200px) { 
 	.social {
 		width: 12%;
@@ -31,6 +30,10 @@
 		}
 	}	
 	//end Slick Nav	
+	.section1schedule {
+	padding-left: 6px*100%/1200px;
+	padding-right: 6px*100%/1200px;
+	}
 }
 
 @media screen and (max-width: 1090px) {
@@ -90,6 +93,9 @@
 	}
 	.nc_inner_mod {
 		max-width: 740px;
+	}
+	.chedule_separator {
+		display: none;
 	}
 }
 @media screen and (max-width: 768px) { 
@@ -284,6 +290,9 @@
 	.contact_holder {
 		padding-left: 30px;
 		    min-width: 333px;
+	}
+	.chedule_cost_text {
+		font-size: 20px;
 	}
 }
 @media screen and (max-width: 320px) {

@@ -31,4 +31,31 @@ $base-fs: 18px;
     content: '';
   }
 }
-
+%time {
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	min-height: 63px;
+	@include border-radius(11px); // border radius
+	@include background-clip(padding-box); // prevents bg color from leaking outside the border
+	background-color: #fff; // layer fill content
+	border: 2px #76aebb solid; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+%individual_and_mass {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #000;
+	font-size: 30px;
+	padding-top: 80px;
+	padding-bottom: 60px;
+	text-align: center;
+	position: relative;
+	&>:first-child {
+		vertical-align: middle;
+	line-height: 37px;
+	margin-left: 15px;
+	margin-bottom: 5px;
+	}
+}
