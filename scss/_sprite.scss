@@ -34,7 +34,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 21px;
   height: 33px;
 }
-.icon-black_ok {
+.icon_black_ok {
   background-image: url(../img/sprite.png);
   background-position: -177px -189px;
   width: 24px;
@@ -100,7 +100,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 133px;
   height: 49px;
 }
-.icon-green_ok {
+.icon_green_ok {
   background-image: url(../img/sprite.png);
   background-position: -96px -189px;
   width: 30px;
@@ -124,7 +124,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 19px;
   height: 29px;
 }
-.icon-ok {
+.icon_ok {
   background-image: url(../img/sprite.png);
   background-position: -178px -152px;
   width: 41px;
@@ -184,7 +184,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 129px;
   height: 63px;
 }
-.icon-star {
+.icon_star {
   background-image: url(../img/sprite.png);
   background-position: -96px -152px;
   width: 41px;
@@ -196,7 +196,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 29px;
   height: 29px;
 }
-.icon-white_ok {
+.icon_white_ok {
   background-image: url(../img/sprite.png);
   background-position: -153px -189px;
   width: 24px;
@@ -223,4 +223,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 20px;
   height: 19px;
   background-image: url(../img/black_pen.png);
+}
+.white_round_ok {
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/white-round-ok.png");
 }

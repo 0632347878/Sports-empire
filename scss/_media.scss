@@ -97,6 +97,42 @@
 	.chedule_separator {
 		display: none;
 	}
+	.trener_card, .individual_session, .program {
+		flex-direction: column;
+		align-items: center;
+		&>:nth-child(2) {
+			width: auto;
+			margin-left: 1%;
+		} 
+	}
+	.individual_cost_heading {
+		padding-top: 20px;	
+	}
+	.lounge {
+		padding-top: 25px;
+	}
+	.program_right {
+		margin-top: 20px;
+	}
+	.prog_mod {
+		transform: translateX(0px);
+	}
+	.coach_block, .coach_block_bottom {
+		margin-left: auto;
+		margin-right: auto; 
+	}
+	.coach_bottom_w {
+		margin-top: 0;
+	}
+	.size_rent, .cost_rent {
+		margin: 0 auto;
+		width: 100%;
+		float: none;
+	}
+	.cost_rent {
+		margin-top: 20px;
+		transform: translatex(-71px);
+	}
 }
 @media screen and (max-width: 768px) { 
 	.social {
@@ -166,6 +202,14 @@
 	.form_text {
 		font-size: 12px;
 	}
+	.individual_cost {
+		.sign_cost, .view_cost {
+			margin: 0 auto;
+	    display: block;
+	    float: none;
+	    margin-bottom: 15px;
+		}
+	}
 }
 @media screen and (max-width: 700px) { 
 	.text_wrapper {
@@ -197,6 +241,12 @@
 			min-width: 113px;
 		}
 	}	
+	.cost_text_w {
+		min-width: auto;
+	}
+	// [class^="row_price"] {
+	// 	padding-right: 0;
+	// }
 }
 @media screen and (max-width: 560px) {
 	.swiper_inner  {
@@ -213,6 +263,55 @@
 		&:first-child {
 			margin-bottom: 10px;
 		}
+	}
+	.cost_text, .individual_cost_heading {
+		padding-left: 0.5%;
+		line-height: 24px;
+	}
+	.individual_cost_heading {
+		font-size: 25px;
+		text-align: center;
+    display: block;
+    &:after {
+    	height: 0;
+    }
+	}
+	.program_right {
+		.program_heading {
+			font-size: 27px;
+			text-align: center;
+			&:after {
+				height: 0;
+			}
+		}
+	}
+	.row_price1 {
+		padding-left: 20px;
+	}
+	[class^="time_span"] {
+		float: left;
+	}
+	.time_span2 { 
+		margin-right: 10px
+	}
+	[class^="span_left"] {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	[class^="span_right"] {
+		float: left;
+		&:last-child {
+		padding-left: 45px;
+		}
+	}
+	.cost_rent {
+		margin-top: 20px;
+		transform: translatex(0);
+	}
+	.size_rent_heading, .cost_rent_heading {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
 	}
 }
 @media screen and (max-width: 480px) { 
@@ -289,10 +388,49 @@
 	}
 	.contact_holder {
 		padding-left: 30px;
-		    min-width: 333px;
+		min-width: 333px;
 	}
 	.chedule_cost_text {
 		font-size: 20px;
+	}
+	.trener_name {
+		text-align: center;
+		font-size: 42px;
+	}
+	.trener_info {
+		&>:first-child {
+		display: block;
+    margin-bottom: 5px;
+	  }
+	} 
+	.individual_cost_heading:after {
+		height: 0;
+	}	
+	.program {
+		margin: 0 0.5%;
+	}
+	.row_price1 {
+		padding-right: 0;
+		padding-left: 0;
+		&>:nth-child(1) {
+			margin-left: 0;
+		}
+	}
+	[class^="time_span"] {
+		line-height: 39px;
+		min-height: 39px;
+		max-width: 95px;
+	}
+	.span_right1, .span_right11, .span_right111 {
+		padding-left: 9px;
+	}
+	.row_price2,
+	.row_price3,
+	.row_price4 {
+		padding-right: 0;
+	}
+	.cost_rent, .size_rent {
+		padding-left: 0.5%;
 	}
 }
 @media screen and (max-width: 320px) {
