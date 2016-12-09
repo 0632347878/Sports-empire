@@ -14,6 +14,7 @@ body {
 }
 .icon {
   display: inline-block;
+  vertical-align: middle;
 }
 .details {
 	font: 21px/23px $Caviar_dreamsbold;
@@ -21,6 +22,7 @@ body {
 	@include background-clip(padding-box); // prevents bg color from leaking outside the border
   outline: none;
   border: none;
+  cursor: pointer;
 }
 .img_round {
 	@include border-radius(100%);
@@ -201,9 +203,6 @@ background-image: url(../img/white_right_arrow.png);
 	background-position: 100% -6%;
   margin-top: -63px;
 }
-.section2 {
-	
-}
 .section2_heading {
 	padding-top: 90px;
 	padding-bottom: 45px;
@@ -237,18 +236,19 @@ background-image: url(../img/white_right_arrow.png);
 	max-width: 237px;
 	width:100%;
 	min-height: 48px;
+	line-height: 53px;
 	margin: 0 auto;
 	margin-top: 30px;
 	display: block;
 	background-color: $link-color;
-	color: $white;
 	text-align: center;
 	padding: 0 2%;
 	cursor: pointer;
+  color: $white;
 	&>:first-child {
-	background-repeat: no-repeat;
+	  background-repeat: no-repeat;
     display: inline-block;
-    
+    color: $white;
 	}
 }
 .icon_white_window {
@@ -262,7 +262,6 @@ background-image: url(../img/white_right_arrow.png);
   margin-bottom: -19px;
   z-index: 20;
   position: relative;
-	// min-height:540px;
 }
 .img_w {
 	float: left;
@@ -304,18 +303,25 @@ background-image: url(../img/white_right_arrow.png);
 }
 .choreography_buttons {
 	padding-bottom: 70px;
+	@include clearfix;
 }
 .sign_s3 {
 	max-width: 340px;
 	width: 100%;
 	min-height: 53px;
+	line-height: 53px;
 	background-color: #ffee7a;
 	margin-right: 27px;
 	cursor: pointer;
-  color: #3d3c3c;
+  text-align: center;
+  float: left;
 	&>:first-child {
 		vertical-align: middle;
-		margin-left: 17px;
+		margin-left: 10px;
+		color: #3d3c3c;
+		&>:first-child {
+			margin-left: 5px;
+		}
 	}
 }
 .details_s3 {
@@ -325,6 +331,9 @@ background-image: url(../img/white_right_arrow.png);
 	background-color: #ffee7a;
 	color: #3d3c3c;
 	cursor: pointer;
+	float: left;
+	line-height: 53px;
+	text-align: center;
 	&>:first-child {
 	color: #3d3c3c;
 	padding: 0 5%;
@@ -380,7 +389,7 @@ background-image: url(../img/white_right_arrow.png);
 	text-indent:65px;
 }
 .figure_buttons {
-	padding-bottom: 65px;
+	padding-bottom: 95px;
 }
 .details_s4 {
 	@extend .details_s3; 
@@ -392,6 +401,7 @@ background-image: url(../img/white_right_arrow.png);
 	background-color: #FFF;
 	margin-left: 27px;
 	margin-right: 0;
+  color: #3d3c3c;
 }
 //Footer
 .footer {
@@ -1681,6 +1691,461 @@ background-size: 100% 100%;
 		text-align: center;
 		display: table-cell;
 		vertical-align: middle;
+	}
+}
+// begin page choreography
+// begin section 1
+.choreography1_w {
+	&:before {
+		height: 0;
+	}
+}
+.choreography_holder {
+	transform: translateX(-20%) translateY(-80%);
+	top: 80%;
+}
+.text_wrapper_choreography {
+	background-image: url(../img/choreography-heading.png);
+	background-repeat: no-repeat;
+	max-width: 600px;
+	min-height: 113px;
+	&>:nth-child(1),
+	&>:nth-child(2) {
+		font-size: 14px;	
+		text-indent: 15px;
+		padding-left: 19px;
+		width: 99%;
+	}
+	&>:first-child {
+		padding-top: 24px;
+	}
+}
+.choreography_holder {
+	max-width: 600px;
+}
+.heading_choreography1 {
+	max-width: 230px;
+	min-height: 70px;
+	&>:first-child {
+		font: 16px/52px $Caviar_dreamsregular;
+		text-transform: uppercase;
+	}
+}
+.view_cshedule {
+	width: 193px;
+	max-width: 100%;
+	min-height: 24px; 
+	background-image: url(../img/chor.png);
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 16px;
+	right: 11px;
+	z-index: -2;
+	text-align: center;
+	&>:first-child {
+		font-size: 14px;
+		line-height: 37px;
+		color: #212930;
+	}
+}
+//begin section2
+.section2choreography_w {
+background-image: url("../img/choreography_schedule.png");
+margin-top: -45px;
+padding-bottom: 50px;
+}
+.section2choreography {
+	padding: 0 3%;
+	@include clearfix;
+}
+.schedule_heading {
+	padding-top: 90px;
+	text-align: center;
+	font: 48px/50px $Caviar_dreamsbold;
+	padding-bottom: 23px;
+}
+.schedule_prev_text {
+	font: 24px/26px $Caviar_dreamsregular;
+	color: #000;
+	&>:first-child {
+		font-family: $Caviar_dreamsbold;
+	}
+	&>:nth-child(2) {
+		vertical-align: middle;
+		margin-bottom: 10px;
+		margin-left: 7px;
+	}
+}
+.choreography_left, .choreography_right {
+	padding-top: 75px;
+	width: 100%;
+	float: left;
+
+}
+.choreography_left {
+	max-width: 550px;
+	margin-right: 80px*100%/1200px;
+}
+.choreography_right {
+	max-width: 440px;
+}
+.choreography_heading_left,
+.choreography_heading_right {
+	font: 36px/38px $Caviar_dreamsbold;
+	color: #4a4f55;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	padding-bottom: 12px;
+	&:after {
+		background-image: url(../img/line4.png);
+		content: "";
+		width: 100%;
+		max-width: 438px;
+		height: 8px;
+		position: absolute;
+		bottom:0;
+		left: 0;
+	}
+}
+.choreography_heading_right {
+
+}
+.row_time {
+	margin-top: 35px;
+	margin-bottom: 30px;
+	max-width: 525px;
+	&>:first-child {
+		margin-left: 50px;
+	}
+}
+.row_price1h, .row_price2h {
+	position: relative;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	max-width: 526px;
+	@include clearfix;
+	&>:nth-child(2) {
+		margin-left: 55px;
+		margin-right: 7px;
+	}
+	&:after {
+		position: absolute;
+		content: "";
+		height: 4px;
+		max-width: 526px;
+		width: 100%;
+		background-image: url("../img/line5.png");
+		background-repeat: no-repeat;
+		bottom: 0;
+	}
+}
+.row_price2h {
+	&>:nth-child(2) {
+		margin-left: 72px;
+	}
+}
+[class^="time_red"] {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	font: 18px/20px $Caviar_dreamsbold;
+	color: $white;
+	float: right;
+	text-align: center;
+	line-height: 44px;
+}
+.time_red1 {
+	background-image: url(../img/span2bg-red.png);
+	min-height: 39px;
+	max-width: 102px;
+	line-height: 39px;
+	margin-top: 5px;
+}
+.time_red2 {
+	background-image: url(../img/span1bg-red.png);
+	min-height: 44px;
+	max-width: 97px;
+}
+.price1h_left, .price1h_right {
+	font: 24px/26px $Caviar_dreamsbold;
+	color: #4a4f55;
+}
+.price1h_right {
+	float: right;
+	&>:nth-child(1){
+		color: #4a4f55;
+	}
+}
+.ticket_text {
+	color: #4a4f55;
+	font: 18px/25px $Caviar_dreamsbold;
+	&>:first-child {
+		color: #4a4f55;
+	}
+}
+.choreography_right {
+	&>:nth-child(2) {
+		max-width: 440px;
+	}
+}
+.choreography_button {
+	margin: 0 auto; 
+	margin-top: 65px;
+	max-width: 335px;
+	min-height: 47px;
+	line-height: 53px;
+	text-align: center;
+	background-color: $link-color;
+	&>:first-child {
+		color: $white;
+		&>:first-child {
+			margin-left: 10px;
+			vertical-align: middle;
+		}
+	}
+}
+// section3
+.section3choreography_w {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-image: url(../img/choreography-bottom-bg.png);
+	padding-bottom: 55px;
+	margin-top: -95px;
+}
+.heading1_couch {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.choreography_couch_heading {
+	text-align: center;
+	font: 36px/38px $Caviar_dreamsbold;
+	color: $white;
+	padding-top: 150px;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 10px;
+	&:after {
+		content: "";
+		width: 100%;
+		max-width: 354px;
+		height: 8px;
+		position: absolute;
+		bottom: 0;
+		background-image: url(../img/line7.png);
+		left: 0;
+	}
+}
+.couches_block {
+	@include flexbox;
+}
+[class^="couch"] {
+	position: relative;
+	margin: 0 auto;
+	align-self: center;
+	justify-content: center;
+	min-width: 250px;
+	@include border-radius(100%); 
+	flex-basis: 350px;
+	flex-wrap: wrap;
+}
+[class^="trener_caption"] {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+  position: absolute;
+  width: 100%;
+  min-height: 74px; 
+  max-width: 330px;  
+  min-width: 260px;
+  line-height: 78px;
+  &>:first-child {
+  	font: 28px/30px $Caviar_dreamsbold;
+  	color: #4a4f55;
+		line-height: normal;
+	  vertical-align: middle;
+	  display: inline-block;  
+	  margin-top: 6px;
+  }
+}
+.trener_caption1 {
+	background-image: url("../img/couch-caption1.png");
+	bottom: -10px;
+	&>:first-child {
+		transform: rotate(-3deg);
+	}
+}
+.trener_caption2 {
+  background-image: url(../img/couch-caption2.png);
+  bottom: -10px;
+  &>:first-child {
+		transform: rotate(3deg);
+	}
+}
+// .section1galery_w {
+// 	background-image: url(../img/choreography_schedule.png);
+// 	background-size: 100% 100%;
+// 	background-color: #f8ffff;
+// }
+// begin page gallery
+// begin section1
+.sign2 {
+background-image: url(../img/sign2.png);
+}
+.white_pen_blank {
+	margin-right: 8px;
+}
+.section1galery_w {
+	background-image: url(../img/gallery.png);
+	clear: both;
+	background-color: #f8ffff;
+	position: relative;
+	top: -10px;
+	&:before {
+		content: "";
+		width: 100%;
+		height: 8px;
+		background-image: url(../img/line_choreography.png);
+		background-size: 100% 100%;
+		position: absolute;
+		left:0;
+		top:0;
+	}
+}
+.section1galery {
+
+padding-bottom: 50px;
+}
+.gallery_top_w {
+	@include clearfix;
+	padding-top: 110px;
+}
+.left_choreoraphy, .right_choreoraphy {
+	float: left;
+}
+.left_choreoraphy {
+	max-width: 600px;
+	min-height: 373px;
+	@include border-radius(17px); // border radius
+}
+.right_choreoraphy {
+	max-width: 550px;
+	margin-left: 42px;
+	margin-bottom: 70px;
+	@include clearfix;
+}
+.right_choreoraphy_heading {
+	font-size: 48px;
+	color: #212930;
+	padding-bottom: 20px;
+}
+// buttons
+.gallery_sign {
+	background-color: #ec5937;
+	max-width: 268px;
+	width: 100%;
+	min-height: 49px;
+	font-size: 16px;
+	line-height: 49px;
+	text-align: center;
+	float: left;
+	&>:first-child {
+		font-family: $Caviar_dreamsbold;
+		color: $white;
+		&>:first-child {
+			margin-left: 10px;
+			margin-bottom: 5px;
+		}
+	}
+}
+.right_choreoraphy_text {
+	margin-bottom: 32px;
+	color: #212930;
+	line-height: 24px;
+}
+.gallery_view {
+	background-color: #b4442a;
+	max-width: 250px;
+	width: 100%;
+	min-height: 49px;
+	font-size: 16px;
+	line-height: 49px;
+	text-align: center;
+	float: left;
+	margin-left: 20px*100%/550px;
+	&>:first-child {
+		font-family: $Caviar_dreamsbold;
+		color: $white;
+		&>:first-child {
+			margin-left: 10px;
+			margin-bottom: 5px;
+		}
+	}
+}
+.gallery_block {
+	min-height: 145px;
+}
+.gallery_item {
+	min-width: 205px;
+	&>:first-child {
+		margin: 0 auto;
+	}
+}
+.gallery_prev {
+	background-image: url(../img/gallery_prev.png);
+  width: 18px;
+  height: 33px;
+  background-size: contain;
+}
+.gallery_next {
+	background-image: url(../img/gallery_prev.png);
+	transform: rotate(180deg);
+	width: 18px;
+	height: 33px;
+	background-size: contain;
+	right: 0;
+}
+.section2galery_w {
+	background-image: url(../img/snow.png);
+	background-color: #dee8fd;
+	position: relative;
+	margin-top: -15px;
+	&:before {
+		content:"";
+		width: 100%;
+		height: 7px;
+		background: url("../img/repear.png") repeat-x;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.section2galery {
+padding-bottom: 50px;
+}
+.gallery_bottom_w {
+	padding-top: 70px;
+	@include clearfix;
+}
+.left_figure {
+	max-width: 550px;
+	margin-right: 40px;
+	float: left;
+}
+.left_choreoraphy {
+	max-width: 600px;
+	float: left;
+}
+.left_figure {
+	margin-bottom: 70px;
+	&>:nth-child(3) {
+		margin-right: 3.63636%;
+		margin-left: 0;
+		background-color: #7591c5;
+	}
+	&>:nth-child(4) {
+		background-color: #87a0ce;
 	}
 }
 //---Grid

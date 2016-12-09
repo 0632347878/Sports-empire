@@ -148,19 +148,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 23px;
   height: 23px;
 }
-.icon-red_VK {
+.icon_red_VK {
   background-image: url(../img/sprite.png);
   background-position: -181px -63px;
   width: 29px;
   height: 29px;
 }
-.icon-red_facebook {
+.icon_red_facebook {
   background-image: url(../img/sprite.png);
   background-position: -248px -152px;
   width: 29px;
   height: 29px;
 }
-.icon-red_instagram {
+.icon_red_instagram {
   background-image: url(../img/sprite.png);
   background-position: 0px -216px;
   width: 29px;
@@ -228,4 +228,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 21px;
   height: 21px;
   background-image: url("../img/white-round-ok.png");
+}
+.white_pen_blank {
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/white-blank&pen.png");
 }

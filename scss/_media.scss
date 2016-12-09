@@ -34,6 +34,26 @@
 	padding-left: 6px*100%/1200px;
 	padding-right: 6px*100%/1200px;
 	}
+  .gallery_top_w {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	padding-top: 60px;
+  }
+  .left_choreoraphy {
+  	margin-bottom: 15px;
+  }
+  .right_choreoraphy {
+    margin-bottom: 30px;
+  }
+  .gallery_bottom_w {
+  	display: flex;
+  	flex-direction: column-reverse;
+  	align-items: center;
+  }
+  .left_figure {
+  	margin-right: 0;
+  } 
 }
 
 @media screen and (max-width: 1090px) {
@@ -132,6 +152,21 @@
 	.cost_rent {
 		margin-top: 20px;
 		transform: translatex(-71px);
+	}
+	.choreography_left, .choreography_right {
+		float: none;
+		margin: 0 auto;
+	}
+	.choreography_button {
+		margin-bottom: 20px;
+	}
+	.right_choreoraphy {
+		margin-left: 0;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.left_choreoraphy {
+		min-height: auto; 
 	}
 }
 @media screen and (max-width: 768px) { 
@@ -244,9 +279,39 @@
 	.cost_text_w {
 		min-width: auto;
 	}
-	// [class^="row_price"] {
-	// 	padding-right: 0;
-	// }
+	.choreography_couch_heading {
+		padding-top: 240px;
+	}
+	.couch1 {
+		margin-bottom: 50px;
+	}
+	.section2choreography_w {
+		padding-bottom: 80px;
+	}
+	.section3choreography_w {
+		margin-top: -200px;
+	}
+	.choreography_button {
+		margin-bottom: 140px;
+	}
+	.gallery_view, .gallery_sign,  {
+		float: none;
+		margin: 0 auto;
+	}
+	.gallery_sign {
+		margin-bottom: 15px;
+	}
+	.left_figure > :nth-child(3) {
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+	.left_figure {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.right_choreoraphy_heading {
+		text-align: center;
+	}
 }
 @media screen and (max-width: 560px) {
 	.swiper_inner  {
@@ -312,6 +377,10 @@
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 20px;
+	}
+	.price1h_left {
+		display: block;
+		margin-bottom: 10px;
 	}
 }
 @media screen and (max-width: 480px) { 
@@ -432,6 +501,9 @@
 	.cost_rent, .size_rent {
 		padding-left: 0.5%;
 	}
+	.section3choreography_w {
+		background-size: cover;
+	}
 }
 @media screen and (max-width: 320px) {
 	.heding_news_wrapper > :first-child {
@@ -442,5 +514,8 @@
 	}
 	.news_inner {
 		margin-top: 200px;
+	}
+	.swiper-pagination {
+		display: none;
 	}
 }
