@@ -12,8 +12,8 @@
   <link href="css/reset.css" rel="stylesheet">
   <link href="css/fonts.css" rel="stylesheet">
   <link href="css/swiper.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
   <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
   <script src="js/libs.min.js"></script>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -112,7 +112,7 @@
                <span class="right_preice3">1500 <i class="fa fa-rub" aria-hidden="true"></i></span>
               </div> 
            </div> 
-           <a href="#" id="my-button" class="details sign_cost">Записаться на занятие <i class="icon icon_pen"></i></a>
+           <a href="#" class="details my-button sign_cost">Записаться на занятие <i class="icon icon_pen"></i></a>
            <a href="https://0632347878.github.io/Sports-empire/schedule" class="details view_cost">Посмотреть расписание <i class="icon icon_organizer"></i></a>
          </figcaption>
        </figure>
@@ -120,7 +120,18 @@
        <!-- Button that triggers the popup -->
                    <!-- id="my-button" -->
                    <!-- Element to pop up -->
-                   <div id="element_to_pop_up">Content of popup</div>
+        <!--  <div id="element_to_pop_up">
+           <div class="form_figure">
+             <h4 class="vacancy_heading">Заполните все поля</h4>
+             <form name="figure" action="" method="post">
+               <input type="text" placeholder="Ваше имя">
+               <input type="text" placeholder="Ваш номер телефона">
+               <input type="text" placeholder="Ваш e-mail">
+               <input type="submit" value="Подать заявку">
+             </form>
+             <span class="form_text">Мы гарантируем безопасность ваших данных</span>
+           </div>
+         </div> -->
        <!-- end popup figure-->
      </div>
    </section>
@@ -153,7 +164,7 @@
        </div>
      </div>
      <div class="details lounge_sign">  
-       <a href="#" class="sign_cost lounge_action">Записаться на занятие <i class="icon black_pen"></i></a>
+       <a href="#" class="sign_cost my-button lounge_action">Записаться на занятие <i class="icon black_pen"></i></a>
       </div> 
     </div>
    </section>
@@ -192,7 +203,7 @@
          </div>
        </div>
       </div> 
-         <div class="details prog_mod"><a href="#">Записаться на занятие<i class="icon black_pen"></i></a></div>
+         <div class="details my-button prog_mod"><a href="#">Записаться на занятие<i class="icon black_pen"></i></a></div>
      </div>
    </section>
    <!--begin section5-->
@@ -338,7 +349,7 @@ var mySwiper = new Swiper ('.swiper-container', {
 
          // Binding a click event
          // From jQuery v.1.7.0 use .on() instead of .bind()
-         $('#my-button').bind('click', function(e) {
+         $('.my-button').bind('click', function(e) {
 
              // Prevents the default action to be triggered. 
              e.preventDefault();

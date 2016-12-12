@@ -2234,13 +2234,66 @@ a.swiper-pagination-bullet {
   margin: 0 auto;
 }
 // Begin popup
-
-  // #element_to_pop_up { display:none; }
+// #element_to_pop_up { display:none; }
 #element_to_pop_up {
+ justify-content: center;
+  display: flex;
+  align-items: center;
   max-width: 540px;
+  min-width: 300px;
   min-height: 425px;
   background-image: url(../img/figure-mod.png);
   background-size: 100% 100%; 
+}
+.form_figure {
+  width: 60%;
+  min-width: 280px;
+  min-height: 300px;
+  margin-top: 30px;
+}
+.form_figure .figure_heading {
+  font-size: 21px;
+  color: #1c2835;
+  text-align: center;
+  padding-top: 50px;
+}
+form[name="figure"] * {
+  max-width: 326px;
+  padding-left: 20px;
+  max-width: 100%;
+  background-size: 100% 100%;
+  border: none;
+  outline: none;
+  min-height: 49px; 
+  font: 16px/18px 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-repeat: no-repeat;
+}
+form[name="figure"]:first-child {
+  background-image: url(../img/first-input-bg.png);
+  // background-color: transparent;
+} 
+form[name="figure"]:nth-child(2) {
+  background-image: url(../img/second-input-bg.png);
+}
+form[name="figure"]:nth-child(3) {
+ background-image: url(../img/first-input-bg.png);
+}
+form[name="figure"]:nth-child(4) {
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background: none;
+  background-image: url(../img/fourth-input.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 49px;
+  font: 16px/18px "CaviarDreamsBold", sans-serif;
+  color: #fff;
+  cursor: pointer;
+  padding-top: 10px;
+  }
 }
 // end popup
 .row {
@@ -2869,7 +2922,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     margin: 0 0.5%; }
   .row_price1 {
     padding-right: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    display: inline-block;
+    width: 100%; }
     .row_price1 > :nth-child(1) {
       margin-left: 0; }
   [class^="time_span"] {
@@ -2881,6 +2936,8 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   .row_price2,
   .row_price3,
   .row_price4 {
+    display: inline-block;
+    width: 100%;
     padding-right: 0; }
   .cost_rent, .size_rent {
     padding-left: 0.5%; }
