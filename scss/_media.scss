@@ -54,6 +54,13 @@
   .left_figure {
   	margin-right: 0;
   } 
+  .main_wrapper {
+		justify-content: center;
+  }
+  .main_holder {
+  	order: 1;
+  	margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 1090px) {
