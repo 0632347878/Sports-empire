@@ -13,10 +13,11 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slicknav.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/swiper.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css" />
-     <?php wp_head(); ?>
     <script src="<?php echo get_template_directory_uri(); ?>/js/libs.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.responsiveGallery.js"></script>
+    <?php wp_head(); ?>
+     <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.js"></script>
+     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.responsiveGallery.js"></script>
+    <?php wp_head(about); ?>
   </head>
   <body <?php body_class(); ?>>
    <header class="header page_content">
@@ -30,7 +31,7 @@
         wp_nav_menu( array(
           'menu_class'=>'menu',
           'menu_id' => 'menu',   
-          'theme_location'=>'top',
+          'theme_location'=>'top3',
           'after'=>''       
         ) );
       ?>

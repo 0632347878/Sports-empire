@@ -1,12 +1,11 @@
-<footer class="footer">
+ <footer class="footer">
   <div class="footer_w page_content">
    <nav class="nav_bottom">
       <?php 
         wp_nav_menu( array(
           'menu_class'=>'menu',  
           'theme_location'=>'bottom',
-          'after'=>'',
-          'exclude' => 23      
+          'after'=>''     
         ) );
       ?>
    </nav>
@@ -17,11 +16,10 @@
     &copy; 2016 «Империя Спорта». 
   </div>
   </div>
+  <?php wp_footer(home); ?>
  </footer>
-<?php wp_footer(); ?>
-
  <script>
- //initialize SlickNav
+
   $(function(){
     $('#menu').slicknav();
   });
@@ -40,5 +38,6 @@
   })        
 </script>
 
-	</body>
+  </body>
 </html>
+

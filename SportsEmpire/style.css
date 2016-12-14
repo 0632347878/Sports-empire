@@ -2171,13 +2171,15 @@ a.swiper-pagination-bullet {
   bottom: 0; }
 
 .responsiveGallery-btn {
-  bottom: 0; }
+  bottom: -17%; }
 
 .w-gallery {
   width: 100%;
   max-width: 600px;
   overflow: hidden;
-  min-height: 250px; }
+  min-height: 250px; 
+  margin: 0 auto;
+}
 
 .responsiveGallery-item {
   width: 40%;
@@ -2237,10 +2239,10 @@ a.swiper-pagination-bullet {
   margin: 0 auto;
 }
 #responsiveGallery-container2>:first-child {
-  background-image: url(../img/white-arrow-prev.png);
+  background-image: url(img/white-arrow-prev.png);
 }
 #responsiveGallery-container2>:nth-child(2) {
-  background-image: url(../img/white-arrow-prev.png);
+  background-image: url(img/white-arrow-prev.png);
   transform: rotate(180deg);
 }
 .row {
@@ -2913,3 +2915,22 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   .w-gallery {
     min-height: 160px;
   } }
+
+
+.inline-block{
+  display: inline-block;
+  width: 100%;
+}
+
+.pull-right{
+  float: right;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.inline-block-item{
+  display: inline-block;
+  float: none;
+}

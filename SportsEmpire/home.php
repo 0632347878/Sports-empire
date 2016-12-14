@@ -1,3 +1,10 @@
+<?php
+/**
+ * Template Name: Home
+ */
+
+?>
+
 <?php get_header(); ?>
 
 	<main role="main">
@@ -39,4 +46,4 @@
 		<!-- /section -->
 	</main>
 
-<?php get_footer(); ?>
+<?php get_footer(home); ?>
